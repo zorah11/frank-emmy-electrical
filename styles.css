@@ -729,6 +729,7 @@ figcaption {
 }
 .hero-main {
   object-position: center 35%;
+  transform: scaleX(-1);
 }
 .hero-visual::after {
   background:
@@ -884,13 +885,12 @@ figcaption {
 
 @media (max-width: 900px) {
   .hero {
-    min-height: calc(100svh - 76px);
-    padding: 1rem;
-    display: flex;
-    align-items: flex-end;
+    min-height: 960px;
+    padding: 390px 1rem 1rem;
+    display: block;
   }
   .hero-main {
-    object-position: 56% center;
+    object-position: 66% top;
   }
   .hero-visual::after {
     background: linear-gradient(
@@ -902,7 +902,7 @@ figcaption {
   }
   .hero-copy {
     width: 100%;
-    margin: 0 0 1rem;
+    margin: 0;
     padding: 1.4rem;
     background: rgba(7, 10, 13, 0.61);
   }
