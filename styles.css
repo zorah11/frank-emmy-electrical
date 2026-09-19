@@ -902,7 +902,7 @@ figcaption {
 
 @media (max-width: 900px) {
   .hero {
-    min-height: 700px;
+    min-height: 520px;
     padding: 0;
     display: block;
     background: var(--black);
@@ -919,46 +919,55 @@ figcaption {
     inset: 0;
     height: 100%;
     object-fit: cover;
-    object-position: 59% center;
+    object-position: 47% center;
   }
   .hero-visual::after {
     background: linear-gradient(
       90deg,
-      rgba(5, 7, 9, 0.55),
-      rgba(5, 7, 9, 0.08) 72%
+      rgba(5, 7, 9, 0.38),
+      rgba(5, 7, 9, 0.04) 62%
     );
   }
   .hero-copy {
     position: absolute;
-    left: 1rem;
-    bottom: 1.25rem;
-    width: min(64%, 256px);
+    left: 1.25rem;
+    top: 5.25rem;
+    bottom: auto;
+    width: min(53%, 218px);
     margin: 0;
-    padding: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.24);
-    background: rgba(7, 10, 13, 0.68);
-    -webkit-backdrop-filter: blur(12px) saturate(115%);
-    backdrop-filter: blur(12px) saturate(115%);
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+    padding: 0;
+    border: 0;
+    background: transparent;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
   }
-  .hero h1 {
-    font-size: clamp(2rem, 9.5vw, 2.85rem);
-    line-height: 0.86;
-  }
-  .hero-lead {
-    margin-top: 1rem;
-    font-size: 0.73rem;
+  .hero-copy .eyebrow {
+    max-width: 180px;
+    font-size: 0.56rem;
     line-height: 1.45;
   }
+  .hero h1 {
+    margin-top: 0.75rem;
+    font-size: clamp(1.9rem, 9vw, 2.5rem);
+    line-height: 0.88;
+  }
+  .hero-lead {
+    margin-top: 0.8rem;
+    font-size: 0.68rem;
+    line-height: 1.42;
+  }
   .hero-actions {
-    margin-top: 1rem;
-    display: grid;
-    gap: 0.55rem;
+    margin-top: 0.8rem;
+    display: block;
   }
   .hero-actions .button {
-    width: 100%;
-    padding: 0.8rem 0.55rem;
-    font-size: 0.7rem;
+    width: auto;
+    padding: 0.72rem 0.85rem;
+    font-size: 0.62rem;
+  }
+  .hero-actions .button.light {
+    display: none;
   }
   .hero-badge {
     display: none;
