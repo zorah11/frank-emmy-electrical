@@ -921,8 +921,8 @@ figcaption {
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: 18% center;
+    object-fit: contain;
+    object-position: center;
   }
   .hero-visual::after {
     background: linear-gradient(
